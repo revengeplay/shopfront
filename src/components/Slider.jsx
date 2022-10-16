@@ -28,10 +28,10 @@ const Slider = () => {
   return (
     <div className="w-full h-[100vh] relative flex justify-between items-center">
       {/* <div className="flex "> */}
-      <div className="w-[50px] h-[50px] bg-pink-100 rounded-full flex justify-center items-center mx-auto cursor-pointer">
+      <div className="w-[50px] h-[50px] bg-pink-100 rounded-full flex justify-center items-center mx-auto cursor-pointer t-0 bottom-0 opacity-50">
         <FiArrowLeft />
       </div>
-      <div className="h-full flex ">
+      <div className="h-full flex transition">
         <div className="w-[80vw] h-[100vh] flex items-center ">
           <div className="h-full flex flex-1">
             <img
@@ -45,13 +45,13 @@ const Slider = () => {
             <div className=" mt-50px text-lg font-medium tracking-[3px]">
               상세설명이다
             </div>
-            <button className=" p-[10px] text-sm bg-transparent cursor-pointer">
+            <button className=" p-[10px] text-[20px] bg-transparent cursor-pointer">
               사라
             </button>
           </div>
         </div>
       </div>
-      <div className="w-[50px] h-[50px] bg-pink-100 rounded-full flex justify-center items-center mx-auto cursor-pointer">
+      <div className="w-[50px] h-[50px] bg-pink-100 rounded-full flex justify-center items-center mx-auto cursor-pointer t-0 bottom-0 opacity-50">
         <FiArrowRight />
       </div>
     </div>
